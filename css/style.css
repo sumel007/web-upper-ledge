@@ -1,0 +1,58 @@
+/* ./your-css-folder/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.row{
+    @apply flex flex-wrap mx-4;
+}
+nav .nav-bar ul a::after,
+.language ul a::after
+{
+    content: "";
+    position: absolute;
+    background-color: #ff3f0b;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+footer ul a::after
+{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+nav .nav-bar ul a:hover::after,
+.language ul a:hover::after
+{
+    width: 100%;
+}
+footer ul a:hover::after{
+    width: 100%;
+}
+
+.Work Sans{
+    font-family: "Work Sans", sans-serif;
+}
+.san-sarif{
+    font-family: 'Poppins', sans-serif;
+}
+input:checked + div {
+    @apply bg-primary-color;
+  }
+  input:checked + div svg {
+    @apply block;
+  }
+.footer-bg{
+    background-color: #1b1b1b;
+}
+
